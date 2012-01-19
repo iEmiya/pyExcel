@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>##PythonFileName##</title>
+    <script type="text/javascript"> <!-- XRegExp is bundled with the final shCore.js during build -->
+##XRegExp.js##
+##shCore.js##
+##shBrushJScript.js##
+##shBrushPython.js##
+    </script>
+
+<style type="text/css">
+##shCore.css##
+##shThemeDefault.css##
+</style>
+
+</head>
+<body>
+
+<script type="text/plain" id="input">
+##PythonSource##
+</script>
+
+<script type="text/javascript">
+    var brush = new SyntaxHighlighter.brushes.JScript(),
+	code = document.getElementById('input').innerHTML,
+	python
+	;
+
+    brush.init({ toolbar: false });
+    html = brush.getHtml(code);
+
+    document.write(html);
+</script>
+
+</body>
+</html>
+

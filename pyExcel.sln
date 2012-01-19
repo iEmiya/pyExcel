@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyExcel.Framework", "Framework\pyExcel.Framework.csproj", "{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyExcel.WinApp", "WinApp\pyExcel.WinApp.csproj", "{1F600200-35C6-41C2-BA3E-F0C9029EABF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pyExcel.Framework.Tests", "Framework.Tests\pyExcel.Framework.Tests.csproj", "{041044CE-4276-4874-BEE5-B84FB03D154D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{34EF10DD-41A6-4EC9-B0FA-01517C02C1C9}"
+	ProjectSection(SolutionItems) = preProject
+		docs\Manual.rtf = docs\Manual.rtf
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}.Release|x86.ActiveCfg = Release|Any CPU
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Debug|x86.ActiveCfg = Debug|x86
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Debug|x86.Build.0 = Debug|x86
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Release|Any CPU.ActiveCfg = Release|x86
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Release|x86.ActiveCfg = Release|x86
+		{1F600200-35C6-41C2-BA3E-F0C9029EABF5}.Release|x86.Build.0 = Release|x86
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{041044CE-4276-4874-BEE5-B84FB03D154D}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

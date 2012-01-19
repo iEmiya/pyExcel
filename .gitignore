@@ -1,0 +1,35 @@
+# local settings #
+##################
+*.user
+
+# compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.pdb
+*.dll.config
+*.cache
+*.suo
+
+# Directories #
+###############
+[bB]in/
+[oO]bj/
+
+# Resharper #
+#############
+/_[Rr]e[Ss]harper.*
+*.[Rr]e[Ss]harper.*
+*.[Rr]e[Ss]harper
+_[Rr]e[Ss]harper.*/
+
+# OS generated files #
+######################
+[Tt]humbs.db 
+[Dd]esktop.ini
+
+# Custom settings #
+######################
+*.~cs

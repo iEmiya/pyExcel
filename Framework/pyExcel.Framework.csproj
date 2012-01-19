@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AF4DBAFD-7B6E-4B68-B9E0-D653990DDBD6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pyExcel.Framework</RootNamespace>
+    <AssemblyName>pyExcel.Framework</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\bin\pyExcel.Framework.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\bin\pyExcel.Framework.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\NPOI\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\IronPython\IronPython.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Dynamic, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\IronPython\Microsoft.Dynamic.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\IronPython\Microsoft.Scripting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Scripting.Metadata, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\IronPython\Microsoft.Scripting.Metadata.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>..\lib\NPOI\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\AssemblySharedInfo.cs">
+      <Link>Properties\AssemblySharedInfo.cs</Link>
+    </Compile>
+    <Compile Include="Exceptions\Impl\FileNotFoundException.cs" />
+    <Compile Include="Exceptions\Abst\Stop.cs" />
+    <Compile Include="Exceptions\Abst\Exclamation.cs" />
+    <Compile Include="Exceptions\Abst\Warning.cs" />
+    <Compile Include="Exceptions\Abst\Asterisk.cs" />
+    <Compile Include="Exceptions\Abst\Error.cs" />
+    <Compile Include="Exceptions\Abst\Information.cs" />
+    <Compile Include="Exceptions\Impl\SheetNotFoundException.cs" />
+    <Compile Include="Exceptions\IUIExceptionDetail.cs" />
+    <Compile Include="Exceptions\TypeThrow.cs" />
+    <Compile Include="Model\ExcelExtension.cs" />
+    <Compile Include="Model\ExportHelper.cs" />
+    <Compile Include="Model\IMainView.cs" />
+    <Compile Include="Model\IProvider.cs" />
+    <Compile Include="Model\NPOI Provider.cs" />
+    <Compile Include="Model\NPOIExtension.cs" />
+    <Compile Include="Model\SerializationExtensions.cs" />
+    <Compile Include="Presenter\MainPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PythonHelper.cs" />
+    <Compile Include="Model\Worker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SyntaxHighlighter\styles\shThemeDefault.css" />
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Presenter\Model.png" />
+    <Content Include="SyntaxHighlighter\styles\shCore.css" />
+    <Content Include="SyntaxHighlighter\styles\shCoreDefault.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SyntaxHighlighter\template.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SyntaxHighlighter\scripts\shBrushJScript.js" />
+    <Content Include="SyntaxHighlighter\scripts\shBrushPython.js" />
+    <Content Include="SyntaxHighlighter\scripts\shCore.js" />
+    <Content Include="SyntaxHighlighter\scripts\XRegExp.js" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if  $(ConfigurationName) == Debug $(SolutionDir)lib\vbinc\vbinc.exe -f4 -pdir $(ProjectDir) -sdir $(SolutionDir)
+if  $(ConfigurationName) == Release $(SolutionDir)lib\vbinc\vbinc.exe -f34 -pdir $(ProjectDir) -sdir $(SolutionDir)</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
