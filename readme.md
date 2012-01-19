@@ -18,6 +18,6 @@ It is often necessary to perform routine work of handling Excel files. Sometimes
 
 ### Libraries used
 
- * [IronPython](http://ironpython.net/) - IronPython is an open-source implementation of the Python programming language which is tightly integrated with the .NET Framework.
- * [NPOI](http://npoi.codeplex.com/) - POI is an open source project which can help you read/write xls, doc, ppt files. It has a wide application.
- * [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/) - SyntaxHighlighter is a fully functional self-contained code syntax highlighter developed in JavaScript.
+ * [IronPython](http://ironpython.net/) is an open-source implementation of the Python programming language which is tightly integrated with the .NET Framework.
+ * [NPOI](http://npoi.codeplex.com/) is an open source project which can help you read/write xls, doc, ppt files. It has a wide application.
+ * [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/) is a fully functional self-contained code syntax highlighter developed in JavaScript.
