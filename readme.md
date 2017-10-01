@@ -1,4 +1,4 @@
-## Pyton in Excel
+## Python in Excel
 
 It is often necessary to perform routine work of handling Excel files. Sometimes you just need to apply not complex formula and store the result.
 
